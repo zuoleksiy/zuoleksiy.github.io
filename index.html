@@ -1,126 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<meta charset="utf-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="css/style.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Hanalei+Fill" rel="stylesheet"> 
-	<link href="https://fonts.googleapis.com/css?family=Istok+Web" rel="stylesheet"> 
 </head>
 <body>
-	<div class="container">
-		<div class="header">
-			<h1 class="logo">BLOG</h1>
-			<h1 class="text">Інтересні запитання</h1>
-			<div class="none" onclick="menu()" id="menu"></div>
-			<div class="nav-head closed" id="nav">
-			<ul class="nav-list-header">
-				<li class="item1-h item-h"><a href="index.html">Головна</a></li>
-				<li class="item2-h item-h"><a href="portfolio.html">Портфоліо</a></li>
-				<li class="item3-h item-h"><a href="#">Блог</a></li>
-				<li class="item4-h item-h"><a href="#">Контакти</a></li>
-				<li class="item4-h item-h"><a href="#modal">Modal window</a></li>
-			</ul>
-				<input type="button" name="button" value="Закрити" onclick="closed()">
-			</div>
-		</div>
-		<div class="nav">
-			<div class="sticky">
-			<ul>
-				<li class="item1 item"><a href="index.html">Головна</a></li>
-				<li class="item2 item"><a href="portfolio.html">Портфоліо</a></li>
-				<li class="item3 item"><a href="#">Блог</a></li>
-				<li class="item4 item"><a href="#">Контакти</a></li>
-				<li class="item4 item"><a href="#modal">Modal window</a></li>
-			</ul>	
-			</div>
-		</div>
-		<div class="asside">
-			<div class="post1 posts">
-				<h2>Чому в році 12 місяців?</h2><br>
-				<span>Тому що в ньому 12 молодиків Для відліку часу люди з давніх-давен використовували повторювані природні явища і процеси. Рік, наприклад, - це час від розливу до розливу річки. А місяць - проміжок від молодика до молодика, тобто близько 29,5 сонячної доби. У рік укладається приблизно 12 таких проміжків, тому в році вважали 12 місяців. При цьому місячний рік виходить коротше сонячного. У сонячному календарі стародавніх єгиптян було 365 днів: 12 місяців по 30 днів і п'ять днів в кінці року, що не входили ні в який місяць.</span>
-			</div>			
-			<div class="post3 posts">
-				<h2>Чому у Великобританії не існує об'єднаної збірної по футболу?</h2>
-				<span>Це пов'язано з політико-територіального устрою Великобританії
+	<!--Header-->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#pageTop"><img src="img/bootstrap.png" width="30" height="30" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" arial-controls="navbarSupportedContent" arial-expabded="false" arial-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-					У Великобританії існують чотири футбольні асоціації, кожна з яких відноситься до однієї з країн-автономій: Англії, Шотландії, Уельсу та Північної Ірландії. Ці чотири асоціації є найстарішими в світі і входять до Міжнародної ради футбольних асоціацій (він визначає правила гри в футбол). Об'єднаної збірної Великобританії з футболу в даний момент не існує. При цьому кожна з автономій має свою команду, свої футбольні ліги і кубки та кожна є повноправним членом ФІФА та УЄФА, а значить, може самостійно брати участь в європейських і світових змаганнях.</span>
-					<details class="details"><summary>Більше</summary>Втім, збірна Великобританії, що називалася «олімпійської футбольної командою Великобританії і Північної Ірландії», все ж існувала до 1972 року.
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto justify-content-end">
+          <li class="nav-item rounded js-scroll-trigger">
+            <a href="#Skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item rounded js-scroll-trigger">
+            <a href="#Portfolio" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-item rounded js-scroll-trigger">
+            <a href="#Contact" class="nav-link">Contact</a>
+          </li>
+           <li class="nav-item rounded js-scroll-trigger">
+            <a href="blog.html" class="nav-link">Blog</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-					До Олімпійських ігор 2012 року збірна знову об'єдналася під керівництвом тренера Стюарта Пірса. Він міг викликати будь-якого гравця Великобританії в команду, але Шотландія, Уельс і Північна Ірландія були проти цього, оскільки побоювалися втратити свою спортивну незалежність. Після Олімпіади в Лондоні збірна знову припинила своє існування.</details>
-			</div>			
-			<div class="post5 posts">
-				<h2>Чому припливи і відливи трапляються двічі на добу, хоча місяць одна?</h2>
-				<span>Через відцентрової сили
 
-				Строго кажучи, не Місяць обертається навколо Землі, а обидва небесних тіла обертаються навколо загального центру мас, перебуваючи по різні боки від нього. Тяжіння Місяця створює водяний горб на зверненої до неї стороні Землі, а відцентрова сила, пов'язана з рухом Землі навколо центру мас, породжує водяний горб з протилежного боку.</span>
-				<details class="details"><summary>Більше</summary>По отношению к Луне эти горбы неподвижны, но из-за вращения планеты каждый из них «пробегает» за сутки по всей Земле, и вместе они вызывают два прилива и два отлива. Влияние Солнца на приливы в четыре раза слабее, так что им можно пренебречь в данном случае.
-				<img src="img/moon.jpg"></details>
-			</div>			
-			<div class="post7 posts">
-				<h2>Чому нам хочеться рухатися в ритм музики?</h2>
-				<span>Щоб краще її відчувати
 
-					Вичерпної відповіді на це питання немає. Відомо лише, що така реакція на ритмічну музику - вроджена, бо вона властива навіть маленьким дітям, які ніколи не бачили танцю. Мабуть, відбиваючи ритм рукою або ногою, людина краще його відчуває, точніше, вловлює його зміни. Це узгоджується з відомою гіпотезою австрійського музикознавця Ріхарда Валлашека, згідно з якою сама музика народилася як засіб координації ритмічних рухів, особливо рухів групи людей.</span>
-			</div>			
-		</div>
-		<div class="artical">
-			<div class="post2 posts">
-				<h2>Чому панцир черепахи складається з шестикутників?</h2><br>
-				<span>Завдяки осередкам такої форми він найпростіше нарощується Черепахи ростуть, і їх панцир повинен збільшуватися разом з ними, причому рівномірно по всій площі. Тому черепашачий панцир формується з окремих пластинок, щільно підігнаних один до одного, як дощечки паркету, але зберігають здатність приростати по краях. Якби пластинки могли рівномірно рости в усі сторони, вони мали б форму кіл. Однак кола не можуть щільно прилягати одне до одного, між ними неминуче будуть залишатися просвіти.</span> <details class="details"><summary>Більше</summary>Існує не так вже й багато плоских фігур, якими можна заповнити поверхню без зазорів і перекриттів. Найпростіші - три правильних багатокутника: трикутник, квадрат і шестикутник. Зростаючий ділянку навряд чи може зберігати форму квадрата або рівностороннього трикутника: формоутворення відбувається шляхом ділення і міграції клітин, а клітини «не вміють» вимірювати кути і відраховувати відстані. В цьому відношенні шестикутники - найзручніші з фігур, здатних заповнити поверхню: їхня форма найближче до кола. Вони і складають основу панцира, а пластини, що приростають з боків, «пригоняются» до них так, щоб панцир мав рівний край.</details>
-			</div>
-			<div class="post4 posts">
-				<h2>Чому деякі люди бояться собак?</h2>
-				<span>Людей можна розділити на дві категорії: тих, хто обожнює собак і не уявляє свого життя без них, і тих, хто собак не любить, а частіше боїться. Чому так відбувається? Невже, на шляху одних зустрічаються добрі собаки, а інші стикаються лише з лютими псами?
+    <!--Slider-->
+    <div class="container-fluid p-0" id="pageTop">
+      <div id="carouselExempleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active mb-4" data-target="#carouselExempleIndicators" data-slide-to="0"></li>
+          <li class="mb-4" data-target="#carouselExempleIndicators" data-slide-to="1"></li>
+          <li class="mb-4" data-target="#carouselExempleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!--<div class="carousel-item active">
+            <img src="img/back-4.png" class="d-block w-100">
+          </div>-->
+          <div class="carousel-item active">
+            <img src="img/back-2.png" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="img/back-4.png" class="d-block w-100">
+          </div>
 
-				«Всіх любити не можна, і смаки різні», - заперечите ви. І будете, по суті, мають рацію. Однак психологи готові запропонувати інший варіант відповіді: «Вся справа в наших дитячих страхах і фобіях». Ми ще не з'явилися на світ, а фобії і страхи вже живуть в нас.</span>
-				<details class="details"><summary>Більше</summary>Плод усваивает информацию еще в утробе матери, поэтому вы можете и не помнить. Когда вас напугала собака. А вот боязнь будет присутствовать, и перерасти она может в настоящую фобию. Именно поэтому беременным женщинам следует всегда иметь при себе ультразвуковой отпугиватель собак, чтобы избежать подобного стресса, который может сказаться на дальнейшей жизни маленького человечка, находящегося под сердцем.
 
-				Иметь отпугиватель для сохранения собственного психологического комфорта и обеспечения безопасности следует иметь и в том случае, если вы собираетесь в загородную поездку. Кто знает, какую встречу вам уготовила судьба? В лесу. К примеру, вы можете встретить волка или иное дикое животное. И тут уж испуг будет самым минимальным последствием данной ситуации.
+          <a href="#carouselExempleIndicators" class="carousel-control-prev" role="button" data-slide="prev"></a>
+          <span class="carousel-control-prev-icon"></span>
+          <span class="sr-only">Previos</span>
 
-				Если у вас или вашего ребенка уже имеется боязнь собак, то и по улицам города лучше прогуливаться с ультразвуковым отпугивателем, чтобы не усугубить состояние. При этом необходимо обязательно обратиться к специалисту, который поможет справиться с фобией. Ведь не возможно всю жизнь жить в страхе.
-				В подобной ситуации полезной бывает энимелтерапия, т.е. лечение с помощью животных. Безусловно, вы не сможете сразу не бояться большой собаки, за которой вас попросит присмотреть сосед, а вот взять в семью маленького щенка будет отличным решением.
+          <a href="#carouselExempleIndicators" class="carousel-control-next" role="button" data-slide="next"></a>
+          <span class="carousel-control-next-icon" arial-hidden="true"></span>
+          <span class="sr-only" arial-hidden="true">Next</span>
+        </div>
+      </div>
+    </div>
 
-				Наблюдая, как растет это крохотное четырехлапое создание, вы станете его лучше понимать и перестанете бояться. Приручив одно (столь страшное для вас) существо вы сможете перебороть страх, который таится в подсознании. Однако для подобного шага нужен серьезный настрой и твердая уверенность, что вы можете перебороть страх.
+    <!--Skills-->
+    <div data-spy="scroll" data-target="#navbar-example2" data-ofset="0" class="container-fluid my-navyku_container" id="Skills">
+    	<h3 class="text-center col-12 m-t-25"><b>Skills</b></h3>
+      <div class="row my-navyku">       
+        <img class="col-3 mr_skills img_min" src="img/g3775.png">
+        <img class="col-3 mr_skills img_min" src="img/g445.png">
+        <img class="col-3 mr_skills img_min" src="img/g4455.png">
+        <img class="col-3 img_min" src="img/g4456.png">
+      </div>
+    </div>
 
-				При этом также стоит принять во внимание, что собаки способны не только помогать справляться со страхами, они способны помочь в борьбе с депрессией, замкнутостью, малоподвижностью. Они прекрасные лекари и очень преданные друзья. Осознав это, вы без сомнения забудете о своей фобии.</details>
-			</div>
-			<div class="post6 posts">
-				<h2>Почему число пи так называеться?</h2>
-				<span>Чому число пі так називаетПотому що грецьке слово «вимірюю навколо» починається з цієї літери
+    <!--Portfolio--> 
+    <div data-spy="scroll" data-target="#navbar-example2" data-ofset="1" class="container-fluid my-works_2 mt_2" id="Portfolio">
+      <div class="row my-works">
+        <img class="col-4  img_min" src="img/cabin.png">
+        <img class="col-4  img_min mf-top" src="img/cake.png">
+        <img class="col-4  img_min mf-top" src="img/circus.png">
+      </div>
+      <div class="row my-works">
+        <img class="col-4 mf-top img_min  mt_b" src="img/game.png">
+        <img class="col-4 mf-top img_min  mt_b" src="img/safe.png">
+        <img class="col-4 mf-top img_min  mt_b" src="img/submarine.png">
+      </div>
+    </div>
+    
+    
+    <!--Contact_FOOTER-->
+    <div data-spy="scroll" data-target="#navbar-example2" data-ofset="2" class="container-fluid height-my bg-dark text-center text-white py-sm-5 m-t-foot py-lg-5 footer" id="Contact">
+      <div class="contact_in">
+      	<h3 class="h3_contact"><i class="fab fa-instagram"></i> p.l.a.n.e.t.a.robo</h3><br>
+      	<h3 class="h3_contact"><i class="fab fa-viber"></i> 0501002530</h3><br>
+      	<h3 class="h3_contact"><i class="fab fa-google"></i> programist0alex@gmail.com</h3><br>
+      	<button type="button" class="btn btn-primary my-button" data-toggle="modal" data-target="#exampleModal">Або залиште повідомлення на сайті</button>
+      	<!--<a data-toggle="modal" data-target="#exampleModal" class="button_animation" href=" ">Або залиште повідомлення на сайті</a>-->
+      </div>
+    </div>
 
-				Число пі виражає відношення довжини кола до діаметру і приблизно дорівнює 3,14. Вперше його позначив грецькою буквою π англієць Вільям Джонс у праці «Огляд досягнень математики», надрукованому в 1706 році?.
-				Він керувався тим, що з неї починається слово περιμετρέο - «вимірюю навколо». Широке поширення це позначення отримало завдяки великому математику Леонарда Ейлера (1707-1783), який часто ним користувався. Як і коли було відкрито саме число, невідомо.
-			</span>
-			<details class="details"><summary>Більше</summary>То, что отношение длины окружности к ее диаметру — число постоянное, известно с незапамятных времен. Вавилоняне в III тысячелетии до н. э. уже знали, что пи равно или чуть больше трех. Вычислить значение этого числа с точностью до трех знаков удалось лишь в III веке до н. э. Архимеду. А в XVIII веке Иоганн Ламберт доказал, что пи нельзя выразить в виде отношения двух целых чисел, то есть в виде конечной или периодической десятичной дроби. Ко времени Ламберта пи уже было вычислено с точностью до ста с лишним знаков. А осенью 2011 года была достигнута точность 10 триллионов знаков.
-			</details>
-			</div>
-			<div class="post8  posts">
-				<h2>Чому під час снігопаду не буває грози?</h2>
-				<span>Через низьку температури і вологості
+    <!-- Modal -->
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Залишити повідомлення</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            {% block body %}
+            <form>
+              <div class="form-group">
 
-					Гроза виникає при електризації хмар. Коли складові їх водяні краплі висять в висхідних потоках, вони накопичують негативний заряд, а позитивний несеться вгору з повітрям. Сила висхідних потоків залежить від перепаду температур з висотою. Взимку перепад менше, оскільки приземний повітря холодніше. Крім того, влітку приповерхневих повітря вологий, і при підйомі водяні пари конденсуються, віддаючи енергію атмосфері. В результаті вологе повітря охолоджується менше, ніж сухий, і тому висхідні потоки посилюються. Краплі можуть триматися в них довше і сильніше електризуватися. І все ж зрідка грози трапляються і в зимових умовах.</span>
-			</div>
-		</div>
-		<div class="footer">&#169;Alex</div>
-	</div>
-	<aside class="modal" id="modal">
-    <header>
-        <h2>Test</h2>
-    </header>
-    <section>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </section>
-    <footer class="footer">
-        <a href="#" class="btn">Закрыть</a>
-    </footer>
-</aside>
-<script type="text/javascript" src="js/script.js"></script>
+                <!-- Hidden Required Fields -->
+                <input type="hidden" name="project_name" value="Site Name">
+                <input type="hidden" name="admin_email" value="programist0alex@gmail.com">
+                <input type="hidden" name="form_subject" value="Form Subject">
+                <!-- END Hidden Required Fields -->
+
+                <label for="exampleInputThema">{{ the_thema }}</label>
+                <input type="thema" class="form-control" id="exampleInputThema" arial-describdti="ThemaHelp" placeholder="Thema">
+                <small id="ThemaHelp" class="form-text text-muted">Введіть тему</small>
+                <br>
+                <label for="exampleInputThema">Email</label>
+                <input type="email" class="form-control" id="exampleInputEmail" arial-describdti="emailHelp" placeholder="Email" required>
+                <small id="ThemaHelp" class="form-text text-muted">Введіть email</small>
+                <br>
+                <label for="exampleInputThema">Повдомлення</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+            {% endblock %}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрити</button>
+            <button type="button" class="btn btn-primary">Відправити</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 </body>
 </html>

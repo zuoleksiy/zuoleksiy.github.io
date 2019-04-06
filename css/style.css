@@ -1,342 +1,117 @@
 *{
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Istok Web', sans-serif;
 }
 
-.container{
-	height: 100%;
-	grid-gap: 0;
-	width: 100%;
-	margin: 0 auto;
-	display: grid;
-	grid-template-columns: 0.5fr 1fr 1fr;
-	grid-template-rows: 15% 1fr 15%;
-	grid-row-gap: 2%;
-	grid-template-areas: "header header header "
-						 "nav 	 asside artical"
-						 "footer footer footer ";
+.my-works{
+	display: flex;
+	align-content: space-around;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1%;
 }
 
-.header{
-	grid-area: header;
-	background-color: #2E9AFE;
-	padding-top: 1.5%;
-	padding-bottom: 2%;
+.mt-b{
+	margin-top: 3%;
 }
-
-li{
-	border-radius: 20px;
-}
-
-.details{
-	background-color: #81DAF5;
-}
-
-.nav{
-	grid-area: nav;
-/*	background-color: #DCDCDC;
-*/	
-}
-
-.asside{
-	grid-area: asside;
-/*	background-color: #DCDCDC;
-*/	
-}
-
-.artical{
-	grid-area: artical;
-/*	background-color: #DCDCDC;
-*/}
 
 .footer{
-	grid-area: footer;
-	background-color: #2E9AFE;
-}
-
-.logo{
-	/*font-family: inherit;*/
-	font-family: 'Hanalei Fill', cursive;
-}
-
-.none{
-	width: 45%;
-}
-
-.text{
-	font-size: 2.4vw;
-}
-
-.header{
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 100vh;
+	margin-top: 2%;
+	justify-content: center;
 	align-content: center;
-	padding-left: 3%;
-	padding-right: 3%;
 }
 
-.nav{
-	padding-left: 15%;
-	padding-right: 23%;
-
+.contact_in{
+	
 }
 
-.nav > .sticky > ul{
-	color: black;
-	list-style: none;
-	text-decoration: none;
-	font-size: 4vh;
-	position: sticky;
+.mt_2{
+	margin-top: 16%;
 }
 
-.sticky{
-	grid-area: nav-list;
+.my-navyku{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	width: 100%
+	height: 100vh;
 }
 
-a{
-	text-decoration: none;
-	color: black;
+.mr_skills{
+	margin-right: 1%;
 }
 
-.asside{
-	display: grid;
-	grid-template-columns: 1fr 0.2fr;
-	grid-template-rows: repeat(4, 1fr);
-	grid-row-gap: 15px;
-	grid-template-areas: "postone   ."
-						 "postthree ."
-						 "postfive  ."
-						 "postseven ."
+h3 < .footer{
+	font-size: 25rem;
 }
 
-.item-h{
-	display: none;
-}
-
-input{
-	display: none;
-}
-
-.artical{
-	display: grid;
-	grid-template-columns: 1fr 0.1fr;
-	grid-template-rows: repeat(4, 1fr);
-	grid-row-gap: 15px;
-	grid-template-areas: "posttwo   ."
-						 "postfour  ."
-						 "postsix   ."
-						 "posteight ."
-}
-
-.post1{
-	grid-area: postone;
-}
-
-.post2{
-	grid-area: posttwo;
-}
-
-.post3{
-	grid-area: postthree;
-}
-
-.post4{
-	grid-area: postfour;
-}
-
-.post5{
-	grid-area: postfive;
-}
-
-.post6{
-	grid-area: postsix;
-}
-
-.post7{
-	grid-area: postseven;
-}
-
-.post8{
-	grid-area: posteight;
-}
-
-@media(max-width: 750px){
-	.container{
-		grid-template-areas: "header" 	 
-						 	 "asside"
-						 	 "artical"
-						     "footer";
-	grid-template-columns: 1fr;
-	grid-template-rows: 5% 1fr 1fr 100px;
-	grid-gap: 50px;
+@media screen and (max-width: 800px) {
+	.my-navyku{
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-around;
 	}
 
-	.header{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
+	.my-works{
+		flex-direction: column;
+		align-content: space-around;
+		justify-content: center;
+		max-width: 450px;
 	}
 
-	.asside{
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: repeat(4, 1fr);
-	grid-row-gap: 3%;
-	margin-left: 8%;
-	margin-right: 8%;
-	grid-template-areas: "postone  "
-						 "postthree"
-						 "postfive "
-						 "postseven"
+	.h3_contact{
+	font-size: 20px;
 	}
 
-	.open{
-		height: 300px;
-		display: block;
-		background-color: #2E9AFE;
-		position: absolute;
-		top: 8.5%;
-		font-size: 20pt;
-		padding: 40px;
-		right: 0;
+	.my-works_2{
+		justify-content: flex-start;
+		align-content: space-around;
+		max-width: 450px;
 	}
 
-	.d-none{
-		display: none;
-	}
+	.mf-top{
+	margin-top:3%;
+}
 
-	.nav-list-header{
-		text-decoration: none;
-		list-style: none;
-		display: block;
-	}
-
-	.item-h{
-		display: block;
-	}
-
-	input{
-		display: block;
-	}
-
-	.closed{
-		display: none;
-		height: 0;
-		width: 0;
-	}
-
-	.artical{
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: repeat(4, 1fr);
-		grid-row-gap: 3%;
-		margin-left: 8%;
-		margin-right: 8%;
-		grid-template-areas: "posttwo  "
-							 "postfour "
-							 "postsix  "
-							 "posteight"
-	}
-
-	.none{
-		width: 0;
-		height: 30px;
-		width: 30px;
-		border: 6px solid black;
-		transform: rotate(90deg);
-		transition: 0.5s;
-		border-top: transparent;
-		border-bottom: transparent;
-	}
-
-	.none:hover{
-		transform: rotate(0deg);
-	}
-
-	.none:before{
-		content: '';
-		border: 3px solid black;
-		position: relative;
-		top: 3px;
-		left: 7px;
-		width: 20px;
-		transform: rotate(30deg);
-	}
-
-	.text{
-		display: none;
-	}
-
-	.item{
-		display: none;
-	}
-
-	.nav{
-		display: none;
-		height: 0;
+	.footer{
+		height: 100vh;
 	}
 }
 
+@media screen and (min-width: 500px;){
+	.footer{
+		height: 250px;
+	}
 
 
+}
 
+.img_min{
+	min-width: 250px;
+}
 
-
-
-
-
-
-
-
-/* Стили для неактивного модального окна */
-.modal {
-    background: #fff;
-    left: 50%;
-    margin: -250px 0 0 -40%;
-    position: absolute;
-    top: -50%;
-    width: 80%;
-    border-radius: 5px;
-    box-shadow: 0 3px 7px rgba(0,0,0,.25);
-    -moz-box-shadow: 0 3px 7px rgba(0,0,0,.25);
-    -webkit-box-shadow: 0 3px 7px rgba(0,0,0,.25);
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+.my-button{
+	font-size: 3vh
 }
 
 
-/* Активация модального окна в состоянии :target */
-.modal:target {
-    top: 50%;
-    transition: all 0.4s ease-in-out;
-    -moz-transition: all 0.4s ease-in-out;
-    -webkit-transition: all 0.4s ease-in-out;
-}
 
-.modal header, .modal footer {
-    background: #f7f7f7;
-    border-bottom: 1px solid #e7e7e7;
-    border-radius: 5px 5px 0 0;
-    -moz-border-radius: 5px 5px 0 0;
-    -webkit-border-radius: 5px 5px 0 0;
-}
-.modal footer {
-    border:none;
-    border-top: 1px solid #e7e7e7;
-    border-radius: 0 0 5px 5px;
-    -moz-border-radius: 0 0 5px 5px;
-    -webkit-border-radius: 0 0 5px 5px;
-}
-.modal section, .modal header, .modal footer {
-    padding: 15px;
-    z-index: 200;
-}
-.modal h2 {
-    margin: 0;
-}
-.modal .btn {
-    float: right;
-}
+
+
+
+/*Button*/
+
+
+
+
+
+
+
+/*data-toggle="modal" data-target="#exampleModal"
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Або залиште повідомлення на сайті</button>*/
